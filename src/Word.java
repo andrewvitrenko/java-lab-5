@@ -21,13 +21,13 @@ public class Word {
     }
 
     public String toString() {
-        String result = "";
+        LabStringBuilder result = new LabStringBuilder("");
 
         for (Letter letter : this.letters) {
-            result += letter;
+            result.append(letter);
         }
 
-        return result;
+        return result.toString();
     }
 
     public static boolean isWord(String token) {

@@ -56,13 +56,13 @@ public class Text {
     }
 
     public String toString() {
-        String result = "";
+        LabStringBuilder result = new LabStringBuilder("");
 
         for (Sentence sentence : this.sentences) {
             // add space after sentence
-            result += sentence + " ";
+            result.append(sentence + " ");
         }
 
-        return result.trim();
+        return result.toString().trim();
     }
 }

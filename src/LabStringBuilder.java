@@ -23,6 +23,10 @@ public class LabStringBuilder {
         return result.toArray(new LabStringBuilder[0]);
     }
 
+    public void append(Object obj) {
+        this.stringBuilder.append(obj);
+    }
+
     public String toString() {
         return this.stringBuilder.toString();
     }

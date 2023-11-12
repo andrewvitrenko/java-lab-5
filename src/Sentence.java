@@ -61,17 +61,17 @@ public class Sentence {
     }
 
     public String toString() {
-        String result = "";
+        LabStringBuilder result = new LabStringBuilder("");
 
         for (Object token : this.tokens) {
             if (Word.isWord(token.toString())) {
                 // add space before word
-                result += " ";
+                result.append(" ");
             }
 
-            result += token;
+            result.append(token);
         }
 
-        return result.trim();
+        return result.toString().trim();
     }
 }

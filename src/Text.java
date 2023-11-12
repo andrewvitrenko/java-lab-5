@@ -7,6 +7,7 @@ public class Text {
 
     public Text(String example) throws LabException {
         LabStringBuilder text = new LabStringBuilder(example);
+        text.replaceAll("[\\s\\t]+", " ");
 
         LabStringBuilder[] tokens = text.split(Text.SEPARATOR);
 

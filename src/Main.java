@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Main {
-    static final String example = "Lorem ipsum dolor sit amet, consectetur adipiscing elit? " +
+    static final String example = "Lorem ipsum \tdolor \t\tsit amet, consectetur adipiscing elit?     " +
             "Duis ullamcorper facilisis enim, vel bibendum leo scelerisque ut! " +
             "Nunc ac massa ac nulla sagittis pharetra id eget ipsum. " +
             "In hac habitasse platea dictumst. " +
@@ -16,7 +16,6 @@ public class Main {
             "Maecenas quis lectus sit amet lectus elementum blandit.";
 
     public static void main(String[] args) {
-
         try {
             Text text = new Text(Main.example);
 
